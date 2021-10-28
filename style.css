@@ -16,7 +16,8 @@ FONT SIZE SYSTEM (px)
 /* GENERAL STYLES */
 /* ------------------------ */
 body {
-  font-family: sans-serif;
+  font-family: "Roboto", sans-serif;
+  color: #495057;
 }
 
 .container {
@@ -26,13 +27,17 @@ body {
 
 header,
 section {
-  margin-bottom: 48px;
+  margin-bottom: 68px;
 }
 
 h2 {
   margin-bottom: 48px;
+  font-size: 28px;
 }
-
+.nothing {
+  margin-top: 100px;
+  font-size: 40px;
+}
 .grid-3-cols {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -57,31 +62,66 @@ header {
 
 h1 {
   margin-bottom: 24px;
+  font-size: 46px;
+  font-weight: bold;
+  line-height: 1;
+  letter-spacing: -1px;
 }
 
 .header-text {
   margin-bottom: 24px;
+  line-height: 1.7;
+}
+
+/* BUTTON design */
+.btn:link,
+.btn:visited {
+  background-color: #087f5b;
+  color: #ffff;
+  text-decoration: none;
+  font-weight: 500;
+  border-radius: 100px;
+  display: inline-block;
+}
+.btn--big {
+  font-size: 18px;
+  padding: 16px 32px;
+}
+.btn--small {
+  font-size: 14px;
+  padding: 8px 12px;
+}
+.icon-style {
+  height: 32px;
+  width: 32px;
+  color: #087f5b;
 }
 
 img {
   width: 100%;
+  border-radius: 15px;
 }
 
 /* FEATURES */
-.features-icon {
-}
 
 .features-title {
-  margin-bottom: 16px;
+  margin: 15px 0px;
+  font-size: 20px;
 }
 
 .features-text {
+  font-size: 16px;
+  line-height: 1.7;
 }
 
 /* TESTIMONIAL */
+/* Testmonial Section*/
 .testimonial-section {
+  padding: 50px;
+  background-color: #087f5b;
+  color: rgb(249, 255, 255);
+  border-radius: 15px;
 }
-
 .testimonial-box {
   grid-column: 2 / -1;
   align-self: center;
@@ -97,6 +137,23 @@ img {
 }
 
 /* CHAIRS */
+.selling-titel {
+  font-size: 36px;
+}
+.chair {
+  border-radius: 10px;
+  -webkit-box-shadow: 1px 13px 15px -2px rgba(0, 0, 0, 0.46);
+  box-shadow: 1px 13px 15px -2px rgba(0, 0, 0, 0.46);
+}
+.chair img {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.chair-icon {
+  height: 24px;
+  width: 24px;
+  stroke: #087f5b;
+}
 .chair-box {
   padding: 24px;
 }
@@ -130,5 +187,6 @@ h3 {
 }
 
 footer {
-  margin-bottom: 48px;
+  margin: 48px 0px;
+  font-size: 14px;
 }
